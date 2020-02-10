@@ -99,13 +99,22 @@ void HuffmanCodes(char data[], int freq[], int size)
 // Driver program to test above functions
 int main()
 {
-
+    /*
 	char arr[] = { 'a', 'b', 'c', 'd', 'e', 'f' };
 	int freq[] = { 5, 9, 12, 13, 16, 45 };
 
 	int size = sizeof(arr) / sizeof(arr[0]);
+    */
+    int n;
+    cin >> n ;
 
-	HuffmanCodes(arr, freq, size);
+    char arr[n];
+    int freq[n];
+
+    for(int i=0;i<n;i++){
+        cin >> arr[i] >> freq[i];
+    }
+	HuffmanCodes(arr, freq, n);
 	/*
 	sort(vs.begin(),vs.end());
 	for(int i=0;i<vs.size();i++)
